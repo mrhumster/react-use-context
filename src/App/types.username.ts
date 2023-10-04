@@ -5,7 +5,7 @@ export interface IUser {
 }
 
 export type Props = {
-    children: ReactNode
+    children: React.ReactElement
 }
 
 export type UserContextType = {
