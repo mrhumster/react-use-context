@@ -1,7 +1,9 @@
-import React, {createContext, useMemo, useState} from "react";
+import React, {createContext, useEffect, useMemo, useState} from "react";
 import {IUser, Props, UserContextType} from "../types.username";
 
-const initUser: IUser = { username: undefined}
+const initUser:IUser = {
+    username: undefined
+}
 const UserContext = createContext<UserContextType>({user: initUser, setUser: undefined})
 
 const UserProvider = (props: Props) => {
